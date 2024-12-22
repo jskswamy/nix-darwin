@@ -1,3 +1,0 @@
-#! /usr/bin/env bash
-
-ln -nfs ~/dot_files/ubersicht/widgets ~/Library/Application\ Support/Übersicht/.

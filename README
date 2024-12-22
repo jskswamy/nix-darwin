@@ -1,7 +1,0 @@
-create the following softlinks. Ensure to backup your existing vim and bashrc files before proceeding
-
-from home dir, execute the following commands, assuming you have the dot_files in your home directory
-
-ln -nfs dot_files/vim/vim .vim
-ln -nfs dot_files/vim/vimrc .vimrc
-ln -nfs dot_files/vim/gvimrc .gvimrc
