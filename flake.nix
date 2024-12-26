@@ -35,7 +35,6 @@
       	  pkgs.any-nix-shell
       	  pkgs.aria2
       	  pkgs.bat
-          pkgs.cosign
       	  pkgs.cocoapods
       	  pkgs.colima
       	  pkgs.coreutils
@@ -51,9 +50,7 @@
       	  pkgs.fish
       	  pkgs.fpp
       	  pkgs.fzf
-          pkgs.fabric-ai
       	  pkgs.git
-          pkgs.gitsign
       	  pkgs.glow
       	  pkgs.gnupg
       	  pkgs.go_1_23
@@ -68,7 +65,6 @@
       	  pkgs.jc
       	  pkgs.jdk8
       	  pkgs.jq
-          pkgs.keybase
       	  pkgs.jump
       	  pkgs.keychain
       	  pkgs.kube3d
@@ -85,7 +81,6 @@
       	  pkgs.nssTools
       	  pkgs.openssh
       	  pkgs.pet
-          pkgs.pika
       	  pkgs.ripgrep
       	  pkgs.rustup
       	  pkgs.shfmt
@@ -107,11 +102,20 @@
       	  pkgs.wget
       	  pkgs.zellij
           pkgs.alacritty
-          pkgs.iina
-          pkgs.stow
-          pkgs.yazi
           pkgs.bruno
           pkgs.bruno-cli
+          pkgs.cosign
+          pkgs.fabric-ai
+          pkgs.gitsign
+          pkgs.iina
+          pkgs.keybase
+          pkgs.pika
+          pkgs.pinentry_mac
+          pkgs.pinentry-curses
+          pkgs.stow
+          pkgs.yazi
+          pkgs.yubikey-manager
+          pkgs.yubikey-personalization
         ];
 
       fonts.packages = [
@@ -128,13 +132,15 @@
           "chatgpt"
           "discord"
           "firefox@nightly"
-          "keybase"
           "karabiner-elements"
+          "keybase"
           "reader"
           "tailscale"
+          "veracrypt"
           "wezterm"
           "zen-browser"
           "zoom"
+          "yubico-yubikey-manager"
         ];
         masApps = {
           "bitwarden" = 1352778147;
