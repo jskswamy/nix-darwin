@@ -58,6 +58,7 @@
       	  pkgs.gopls
       	  pkgs.goreleaser
       	  pkgs.graphviz
+          pkgs.github-cli
       	  pkgs.heroku
       	  pkgs.htop
       	  pkgs.httpie
