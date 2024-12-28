@@ -6,9 +6,10 @@
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
+    ghostty.url = "github:ghostty-org/ghostty";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, ghostty }:
   let
     configuration = { pkgs, config, ... }: {
 
@@ -109,7 +110,6 @@
           pkgs.fabric-ai
           pkgs.gitsign
           pkgs.iina
-          pkgs.keybase
           pkgs.pika
           pkgs.pinentry_mac
           pkgs.pinentry-curses
@@ -132,6 +132,7 @@
           "appcleaner"
           "chatgpt"
           "discord"
+          "ghostty"
           "firefox@nightly"
           "karabiner-elements"
           "keybase"
