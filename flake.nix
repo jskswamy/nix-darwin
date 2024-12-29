@@ -136,6 +136,7 @@
           "firefox@nightly"
           "karabiner-elements"
           "keybase"
+          "raycast"
           "reader"
           "tailscale"
           "veracrypt"
