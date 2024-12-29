@@ -131,6 +131,7 @@
         casks = [
           "appcleaner"
           "chatgpt"
+          "capacities"
           "discord"
           "ghostty"
           "firefox@nightly"
