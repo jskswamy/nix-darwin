@@ -273,5 +273,18 @@
         }
       ];
     };
+    darwinConfigurations."Krishnaswamys-MacBook-Pro-2" = nix-darwin.lib.darwinSystem {
+      modules = [
+        configuration
+        nix-homebrew.darwinModules.nix-homebrew
+        {
+          nix-homebrew = {
+            enable = true;
+            user = "subramk";
+            autoMigrate = true;
+          };
+        }
+      ];
+    };
   };
 }
