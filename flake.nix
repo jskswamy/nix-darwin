@@ -11,6 +11,8 @@
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, ghostty }:
   let
+    username = "subramk";
+
     configuration = { pkgs, config, ... }: {
 
       nixpkgs.config.allowUnfree = true;
@@ -234,7 +236,7 @@
 
       nix.optimise = {
         automatic = true;
-        user = "subramk";
+        user = username;
       };
 
       nix.gc = {
@@ -244,48 +246,24 @@
       # The platform the configuration will be used on.
       nixpkgs.hostPlatform = "aarch64-darwin";
     };
+
+    darwinSystem = nix-darwin.lib.darwinSystem {
+      modules = [
+        configuration
+        nix-homebrew.darwinModules.nix-homebrew
+        {
+          nix-homebrew = {
+            enable = true;
+            user = username;
+            autoMigrate = true;
+          };
+        }
+      ];
+    };
   in
   {
-    # Build darwin flake using:
-    # $ darwin-rebuild build --flake .#Krishnaswamys-M2
-    darwinConfigurations."Krishnaswamys-M2" = nix-darwin.lib.darwinSystem {
-      modules = [ 
-        configuration 
-        nix-homebrew.darwinModules.nix-homebrew
-        {
-          nix-homebrew = {
-            enable = true;
-            user = "subramk";
-            autoMigrate = true;
-          };
-        }
-      ];
-    };
-    darwinConfigurations."krishnaswamy-m1-pro" = nix-darwin.lib.darwinSystem {
-      modules = [
-        configuration
-        nix-homebrew.darwinModules.nix-homebrew
-        {
-          nix-homebrew = {
-            enable = true;
-            user = "subramk";
-            autoMigrate = true;
-          };
-        }
-      ];
-    };
-    darwinConfigurations."Krishnaswamys-MacBook-Pro-2" = nix-darwin.lib.darwinSystem {
-      modules = [
-        configuration
-        nix-homebrew.darwinModules.nix-homebrew
-        {
-          nix-homebrew = {
-            enable = true;
-            user = "subramk";
-            autoMigrate = true;
-          };
-        }
-      ];
-    };
+    darwinConfigurations."Krishnaswamys-M2" = darwinSystem;
+    darwinConfigurations."krishnaswamy-m1-pro" = darwinSystem;
+    darwinConfigurations."Krishnaswamys-MacBook-Pro-2" = darwinSystem;
   };
 }
