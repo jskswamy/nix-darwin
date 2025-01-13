@@ -21,6 +21,7 @@
 
       environment.shells = [
         pkgs.fish
+        "/opt/homebrew/bin/fish"
       ];
 
       environment.systemPackages =
@@ -129,6 +130,10 @@
         enable = true;
         brews = [
           "mas"
+          "fish-shell/fish-beta-4/fish"
+        ];
+        taps = [
+          "fish-shell/fish-beta-4"
         ];
         casks = [
           "appcleaner"
@@ -209,7 +214,7 @@
       nix.settings.experimental-features = "nix-command flakes";
 
       # Enable alternative shell support in nix-darwin.
-      users.users.subramk.shell = pkgs.fish;
+      users.users.subramk.shell = "/opt/homebrew/bin/fish"; #pkgs.fish;
       programs.fish = {
         enable = true;
         useBabelfish = true;
