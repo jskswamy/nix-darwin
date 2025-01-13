@@ -117,6 +117,7 @@
           pkgs.pinentry_mac
           pkgs.pinentry-curses
           pkgs.stow
+          pkgs.shell-gpt
           pkgs.yazi
           pkgs.yubikey-manager
           pkgs.yubikey-personalization
