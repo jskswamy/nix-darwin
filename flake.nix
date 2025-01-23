@@ -81,6 +81,7 @@
           pkgs.mkcert
           pkgs.neovim
           pkgs.nssTools
+          pkgs.ollama
           pkgs.openssh
           pkgs.pet
           pkgs.pika
@@ -99,6 +100,7 @@
           pkgs.terraform-lsp
           pkgs.tig
           pkgs.tldr
+          pkgs.television
           pkgs.tmux
           pkgs.tmuxp
           pkgs.tree
