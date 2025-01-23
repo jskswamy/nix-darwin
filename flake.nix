@@ -26,101 +26,90 @@
 
       environment.systemPackages =
         [ 
-      	  #pkgs.nodePackages.bash-language-server
-      	  #pkgs.nodePackages.dockerfile-language-server-nodejs
-      	  #pkgs.nodePackages.typescript-language-server
-      	  #pkgs.nodePackages.yaml-language-server
-      	  #pkgs.pinentry
-      	  #pkgs.rnix-lsp
-
-          pkgs.vim
- 	        pkgs.tmux
-      	  pkgs.SDL2
-      	  pkgs.any-nix-shell
-      	  pkgs.aria2
-      	  pkgs.bat
-      	  pkgs.cocoapods
-      	  pkgs.colima
-      	  pkgs.coreutils
-      	  pkgs.ctags
-      	  pkgs.devbox
-      	  pkgs.direnv
-      	  pkgs.dnsmasq
-      	  pkgs.docker
-      	  pkgs.docker-compose
-      	  pkgs.dua
-      	  pkgs.eza
-      	  pkgs.fd
-      	  pkgs.fish
-      	  pkgs.fpp
-      	  pkgs.fzf
-      	  pkgs.git
-      	  pkgs.glow
-      	  pkgs.gnupg
-      	  pkgs.go_1_23
-      	  pkgs.golint
-      	  pkgs.gopls
-      	  pkgs.goreleaser
-      	  pkgs.graphviz
-          pkgs.github-cli
-      	  pkgs.heroku
-      	  pkgs.htop
-      	  pkgs.httpie
-      	  pkgs.ipcalc
-      	  pkgs.jc
-      	  pkgs.jdk8
-      	  pkgs.jq
-      	  pkgs.jump
-      	  pkgs.keychain
-      	  pkgs.kube3d
-      	  pkgs.kubectl
-      	  pkgs.kubectx
-      	  pkgs.kubernetes-helm
-      	  pkgs.lazydocker
-      	  pkgs.lazygit
-      	  pkgs.lima
-      	  pkgs.lorri
-      	  pkgs.lunarvim
-      	  pkgs.mkcert
-      	  pkgs.neovim
-      	  pkgs.nssTools
-      	  pkgs.openssh
-      	  pkgs.pet
-      	  pkgs.ripgrep
-      	  pkgs.rustup
-      	  pkgs.shfmt
-      	  pkgs.silver-searcher
-      	  pkgs.skim
-      	  pkgs.sops
-      	  pkgs.starship
-      	  pkgs.stern
-      	  pkgs.terraform-ls
-      	  pkgs.terraform-lsp
-      	  pkgs.tig
-      	  pkgs.tldr
-      	  pkgs.tldr
-      	  pkgs.tmuxp
-      	  pkgs.tree
-      	  pkgs.vim
-      	  pkgs.vscode
-      	  pkgs.watch
-      	  pkgs.wget
-      	  pkgs.zellij
           pkgs.alacritty
+          pkgs.any-nix-shell
+          pkgs.aria2
+          pkgs.bat
           pkgs.bruno
           pkgs.bruno-cli
+          pkgs.cocoapods
+          pkgs.colima
+          pkgs.coreutils
           pkgs.cosign
+          pkgs.ctags
+          pkgs.devbox
+          pkgs.direnv
+          pkgs.dnsmasq
+          pkgs.docker
+          pkgs.docker-compose
+          pkgs.dua
+          pkgs.eza
           pkgs.fabric-ai
+          pkgs.fd
+          pkgs.fish
+          pkgs.fpp
+          pkgs.fzf
+          pkgs.gh
+          pkgs.git
           pkgs.gitsign
+          pkgs.glow
+          pkgs.gnupg
+          pkgs.go_1_23
+          pkgs.golint
+          pkgs.gopls
+          pkgs.goreleaser
+          pkgs.graphviz
+          pkgs.heroku
+          pkgs.htop
+          pkgs.httpie
           pkgs.iina
+          pkgs.ipcalc
+          pkgs.jc
+          pkgs.jdk8
+          pkgs.jq
+          pkgs.jump
+          pkgs.keychain
+          pkgs.kube3d
+          pkgs.kubectl
+          pkgs.kubectx
+          pkgs.kubernetes-helm
+          pkgs.lazydocker
+          pkgs.lazygit
+          pkgs.lima
+          pkgs.lorri
+          pkgs.lunarvim
+          pkgs.mkcert
+          pkgs.neovim
+          pkgs.nssTools
+          pkgs.openssh
+          pkgs.pet
           pkgs.pika
-          pkgs.pinentry_mac
           pkgs.pinentry-curses
-          pkgs.stow
+          pkgs.pinentry_mac
+          pkgs.ripgrep
+          pkgs.rustup
           pkgs.shell-gpt
+          pkgs.shfmt
+          pkgs.silver-searcher
+          pkgs.skim
+          pkgs.sops
+          pkgs.starship
+          pkgs.stern
+          pkgs.terraform-ls
+          pkgs.terraform-lsp
+          pkgs.tig
+          pkgs.tldr
+          pkgs.tmux
+          pkgs.tmuxp
+          pkgs.tree
+          pkgs.vim
+          pkgs.vscode
+          pkgs.watch
+          pkgs.wget
           pkgs.yazi
           pkgs.yubikey-manager
           pkgs.yubikey-personalization
+          pkgs.zellij
         ];
 
       fonts.packages = [
@@ -138,11 +127,11 @@
         ];
         casks = [
           "appcleaner"
-          "chatgpt"
           "capacities"
+          "chatgpt"
           "discord"
-          "ghostty"
           "firefox@nightly"
+          "ghostty"
           "karabiner-elements"
           "keybase"
           "raycast"
@@ -150,12 +139,15 @@
           "tailscale"
           "veracrypt"
           "wezterm"
+          "yubico-yubikey-manager"
           "zen-browser"
           "zoom"
-          "yubico-yubikey-manager"
         ];
         masApps = {
+          "barbee hide your menu bar icons" = 1548711022;
           "bitwarden" = 1352778147;
+          "dropover easy drag and drop" = 1355679052;
+          "endel focus relax sleep" = 1346247457;
           "homeassistant" = 1099568401;
           "jomo" = 1609960918;
           "languagetool" = 1534275760;
@@ -165,9 +157,6 @@
           "whisper transcription" = 1668083311;
           "wipr2" = 1662217862;
           "yubico authenticator" = 1497506650;
-          "dropover easy drag and drop" = 1355679052;
-          "barbee hide your menu bar icons" = 1548711022;
-          "endel focus relax sleep" = 1346247457;
         };
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
