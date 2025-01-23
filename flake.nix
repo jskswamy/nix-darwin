@@ -151,6 +151,7 @@
           "bitwarden" = 1352778147;
           "dropover easy drag and drop" = 1355679052;
           "endel focus relax sleep" = 1346247457;
+          "enchanted llm" = 6474268307;
           "homeassistant" = 1099568401;
           "jomo" = 1609960918;
           "languagetool" = 1534275760;
