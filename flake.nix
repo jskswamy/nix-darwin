@@ -154,6 +154,7 @@
           "enchanted llm" = 6474268307;
           "homeassistant" = 1099568401;
           "jomo" = 1609960918;
+          "kindle" = 302584613;
           "languagetool" = 1534275760;
           "raycast" = 6738274497;
           "session" = 1521432881;
