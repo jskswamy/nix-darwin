@@ -87,6 +87,7 @@
           pkgs.pika
           pkgs.pinentry-curses
           pkgs.pinentry_mac
+          pkgs.pipx
           pkgs.ripgrep
           pkgs.rustup
           pkgs.shell-gpt
