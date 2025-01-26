@@ -137,6 +137,7 @@
           "ghostty"
           "karabiner-elements"
           "keybase"
+          "ollama"
           "raycast"
           "reader"
           "tailscale"
