@@ -83,6 +83,7 @@
           pkgs.nssTools
           pkgs.ollama
           pkgs.openssh
+          pkgs.open-webui
           pkgs.pet
           pkgs.pika
           pkgs.pinentry-curses
@@ -136,6 +137,7 @@
           "discord"
           "firefox@nightly"
           "ghostty"
+          "hyperkey"
           "karabiner-elements"
           "keybase"
           "ollama"
