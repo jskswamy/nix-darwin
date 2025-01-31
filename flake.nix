@@ -78,6 +78,7 @@
           pkgs.lima
           pkgs.lorri
           pkgs.lunarvim
+          pkgs.lefthook
           pkgs.mkcert
           pkgs.neovim
           pkgs.nssTools
