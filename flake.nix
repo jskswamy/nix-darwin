@@ -108,6 +108,7 @@
           pkgs.tmuxp
           pkgs.tree
           pkgs.vim
+          pkgs.virtualenv
           pkgs.vscode
           pkgs.watch
           pkgs.wget
