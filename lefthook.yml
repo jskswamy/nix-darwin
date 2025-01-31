@@ -1,0 +1,6 @@
+prepare-commit-msg:
+  commands:
+    fabric:
+      interactive: true
+      run: |
+        git diff --cached | fabric -p git_commit_message  > .git/COMMIT_EDITMSG
