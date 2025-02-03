@@ -51,6 +51,7 @@
           pkgs.fzf
           pkgs.gh
           pkgs.git
+          pkgs.gitleaks
           pkgs.gitsign
           pkgs.glow
           pkgs.gnupg
