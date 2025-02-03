@@ -1,3 +1,13 @@
+pre-commit:
+  commands:
+    detect-hardcoded-secrets:
+      run: |
+        gitleaks git --staged
+pre-push:
+    commands:
+      detect-hardcoded-secrets:
+        run: |
+          gitleaks git
 prepare-commit-msg:
   commands:
     fabric:
