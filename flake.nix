@@ -157,12 +157,13 @@
           "barbee hide your menu bar icons" = 1548711022;
           "bitwarden" = 1352778147;
           "dropover easy drag and drop" = 1355679052;
-          "endel focus relax sleep" = 1346247457;
           "enchanted llm" = 6474268307;
+          "endel focus relax sleep" = 1346247457;
           "homeassistant" = 1099568401;
           "jomo" = 1609960918;
           "kindle" = 302584613;
           "languagetool" = 1534275760;
+          "perplexity" = 6714467650;
           "raycast" = 6738274497;
           "session" = 1521432881;
           "whatsapp" = 310633997;
