@@ -10,7 +10,7 @@ pre-push:
           gitleaks git
 prepare-commit-msg:
   commands:
-    fabric:
+    prepare-commit-msg:
       interactive: true
       run: |
         if [ "$2" = "commit" ] && [ "$3" = "amend" ]; then
