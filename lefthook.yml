@@ -13,4 +13,7 @@ prepare-commit-msg:
     fabric:
       interactive: true
       run: |
+        if [ "$2" = "commit" ] && [ "$3" = "amend" ]; then
+          exit 0
+        fi
         git diff --cached | fabric -p git_commit_message  > .git/COMMIT_EDITMSG
