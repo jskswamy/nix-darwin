@@ -140,7 +140,6 @@
           "discord"
           "firefox@nightly"
           "ghostty"
-          "hyperkey"
           "jupyterlab"
           "karabiner-elements"
           "keybase"
