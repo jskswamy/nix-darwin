@@ -29,6 +29,7 @@
           pkgs.alacritty
           pkgs.any-nix-shell
           pkgs.aria2
+          pkgs.aerospace
           pkgs.bat
           #pkgs.bruno
           #pkgs.bruno-cli
