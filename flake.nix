@@ -29,7 +29,6 @@
           pkgs.alacritty
           pkgs.any-nix-shell
           pkgs.aria2
-          pkgs.aerospace
           pkgs.bat
           #pkgs.bruno
           #pkgs.bruno-cli
@@ -68,7 +67,6 @@
           pkgs.ipcalc
           pkgs.jc
           pkgs.jdk8
-          pkgs.jankyborders
           pkgs.jq
           pkgs.jump
           pkgs.keychain
@@ -243,7 +241,6 @@
       system.stateVersion = 5;
 
       services.lorri.enable = true;
-      services.jankyborders.enable = true;
 
       nix.optimise = {
         automatic = true;
