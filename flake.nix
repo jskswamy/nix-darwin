@@ -77,11 +77,12 @@
           pkgs.lazydocker
           pkgs.lazygit
           pkgs.lima
+          pkgs.lefthook
           pkgs.lorri
           pkgs.lunarvim
-          pkgs.lefthook
           pkgs.mkcert
           pkgs.neovim
+          pkgs.nodejs_23
           pkgs.nssTools
           pkgs.ollama
           pkgs.openssh
