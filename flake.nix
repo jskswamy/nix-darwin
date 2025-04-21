@@ -57,6 +57,7 @@
           pkgs.gnupg
           pkgs.go_1_23
           pkgs.golint
+          pkgs.google-cloud-sdk
           pkgs.gopls
           pkgs.goreleaser
           pkgs.graphviz
@@ -144,6 +145,7 @@
           "jupyterlab"
           "karabiner-elements"
           "keybase"
+          "msty"
           "ollama"
           "raycast"
           "reader"
