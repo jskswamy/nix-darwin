@@ -57,7 +57,6 @@
           pkgs.gnupg
           pkgs.go_1_23
           pkgs.golint
-          pkgs.google-cloud-sdk
           pkgs.gopls
           pkgs.goreleaser
           pkgs.graphviz
@@ -107,6 +106,7 @@
           pkgs.tig
           pkgs.tldr
           pkgs.television
+          pkgs.terraform
           pkgs.tmux
           pkgs.tmuxp
           pkgs.tree
@@ -142,6 +142,7 @@
           "discord"
           "firefox@nightly"
           "ghostty"
+          "google-cloud-sdk"
           "jupyterlab"
           "karabiner-elements"
           "keybase"
