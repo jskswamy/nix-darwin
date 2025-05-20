@@ -51,6 +51,7 @@
           pkgs.fzf
           pkgs.gh
           pkgs.git
+          pkgs.git-lfs
           pkgs.gitleaks
           pkgs.gitsign
           pkgs.glow
@@ -82,6 +83,7 @@
           pkgs.lunarvim
           pkgs.mkcert
           pkgs.neovim
+          pkgs.nixfmt-rfc-style
           pkgs.nodejs_23
           pkgs.nssTools
           pkgs.ollama
@@ -110,6 +112,7 @@
           pkgs.tmux
           pkgs.tmuxp
           pkgs.tree
+          pkgs.uv
           pkgs.vim
           pkgs.virtualenv
           pkgs.vscode
@@ -139,6 +142,7 @@
           "canon-eos-utility"
           "capacities"
           "chatgpt"
+          "claude"
           "discord"
           "firefox@nightly"
           "ghostty"
