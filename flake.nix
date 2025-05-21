@@ -139,6 +139,7 @@
         ];
         casks = [
           "appcleaner"
+          "arc"
           "canon-eos-utility"
           "capacities"
           "chatgpt"
