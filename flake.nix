@@ -84,7 +84,7 @@
           pkgs.mkcert
           pkgs.neovim
           pkgs.nixfmt-rfc-style
-          pkgs.nodejs_23
+          pkgs.nodejs_24
           pkgs.nssTools
           pkgs.ollama
           pkgs.openssh
@@ -187,6 +187,8 @@
       system.defaults = {
         dock.autohide = true;
       };
+
+      system.primaryUser = "subramk";
 
       system.defaults.NSGlobalDomain = {
         AppleInterfaceStyle = "Dark";
