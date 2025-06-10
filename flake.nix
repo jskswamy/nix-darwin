@@ -88,6 +88,7 @@
             pkgs.lima
             pkgs.lorri
             pkgs.lunarvim
+            pkgs.minikube
             pkgs.mkcert
             pkgs.neovim
             pkgs.nixfmt-rfc-style
@@ -107,6 +108,7 @@
             pkgs.silver-searcher
             pkgs.skim
             pkgs.sops
+            pkgs.spotify
             pkgs.starship
             pkgs.stern
             pkgs.terraform-ls
