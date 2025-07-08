@@ -164,6 +164,7 @@
               "ollama"
               "raycast"
               "reader"
+              "shottr"
               "tailscale"
               "veracrypt"
               "warp"
