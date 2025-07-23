@@ -67,6 +67,7 @@
             pkgs.gopls
             pkgs.goreleaser
             pkgs.graphviz
+            pkgs.gum
             pkgs.heroku
             pkgs.htop
             pkgs.httpie
@@ -100,8 +101,10 @@
             pkgs.pinentry-curses
             pkgs.pinentry_mac
             pkgs.pipx
+            pkgs.opencode
             pkgs.ripgrep
             pkgs.rustup
+            pkgs.sesh
             pkgs.shell-gpt
             pkgs.shfmt
             pkgs.silver-searcher
@@ -110,6 +113,7 @@
             pkgs.spotify
             pkgs.starship
             pkgs.stern
+            pkgs.soft-serve
             pkgs.terraform-ls
             pkgs.terraform-lsp
             pkgs.tig
@@ -128,6 +132,7 @@
             pkgs.yazi
             pkgs.yubikey-manager
             pkgs.yubikey-personalization
+            pkgs.zoxide
             pkgs.zellij
           ];
 
