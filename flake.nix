@@ -31,7 +31,6 @@
           ];
 
           environment.systemPackages = [
-            #pkgs.open-webui
             pkgs.alacritty
             pkgs.any-nix-shell
             pkgs.aria2
