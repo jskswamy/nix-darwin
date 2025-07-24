@@ -153,6 +153,7 @@
               "claude"
               "discord"
               "firefox@nightly"
+              "gcloud-cli"
               "google-cloud-sdk"
               "google-drive"
               "ghostty"
