@@ -4,10 +4,10 @@ pre-commit:
       run: |
         gitleaks git --staged
 pre-push:
-    commands:
-      detect-hardcoded-secrets:
-        run: |
-          gitleaks git
+  commands:
+    detect-hardcoded-secrets:
+      run: |
+        gitleaks git
 prepare-commit-msg:
   commands:
     prepare-commit-msg:
