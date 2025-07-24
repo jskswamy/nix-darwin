@@ -11,6 +11,10 @@ pre-push:
 prepare-commit-msg:
   commands:
     prepare-commit-msg:
+      skip:
+        - rebase
+        - merge
+        - merge-commit
       interactive: true
       run: |
         if [ "$2" = "commit" ] && [ "$3" = "amend" ]; then
