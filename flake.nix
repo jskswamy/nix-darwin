@@ -37,6 +37,8 @@
             pkgs.bat
             pkgs.bruno
             pkgs.bruno-cli
+            pkgs.claude-code
+            pkgs.crush
             pkgs.cocoapods
             pkgs.colima
             pkgs.coreutils
@@ -100,7 +102,7 @@
             pkgs.pinentry-curses
             pkgs.pinentry_mac
             pkgs.pipx
-            pkgs.opencode
+            pkgs.python313Packages.nbdime
             pkgs.ripgrep
             pkgs.rustup
             pkgs.sesh
@@ -140,9 +142,10 @@
           ];
 
           homebrew = {
-            enable = true;
+            enable = false;
             brews = [
               "mas"
+              "libomp"
             ];
             casks = [
               "appcleaner"
@@ -154,14 +157,15 @@
               "discord"
               "firefox@nightly"
               "gcloud-cli"
+              "ghostty"
               "google-cloud-sdk"
               "google-drive"
-              "ghostty"
               "jupyterlab"
               "karabiner-elements"
               "keybase"
               "msty"
               "ollama"
+              "protonvpn"
               "raycast"
               "reader"
               "shottr"
